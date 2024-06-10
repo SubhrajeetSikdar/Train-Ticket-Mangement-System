@@ -1,0 +1,14 @@
+body{
+    background-image: url(HD-wallpaper-customize-indian-railways-theme-indian-train.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+#List{
+    text-align: center;
+}
+button{
+    color: blue;
+    border-color: black;
+    width: 10;
+}
