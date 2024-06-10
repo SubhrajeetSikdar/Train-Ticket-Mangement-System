@@ -57,3 +57,40 @@ This markdown document provides a structured overview of the Train Ticket Bookin
 
 
 
+## Usage
+
+1. **HTML Structure**: The HTML file contains a `<form>` element with the action attribute set to "/train_info" and the method attribute set to "post". This form allows users to input a train number.
+
+2. **Input Field**: Inside the form, there is a `<label>` element with the text "Enter Train Number:". This label is associated with an `<input>` element of type "text" and id "train_number". Users can input the train number in this field.
+
+3. **Submit Button**: The form includes a submit button with the value "Fetch". When users click this button, the form data (train number) is submitted to the "/train_info" route of the Flask application.
+
+4. **Styling**: The HTML file does not include any CSS styling. You can add custom styling to improve the appearance of the web form as needed.
+
+## Integration with Flask
+
+To integrate this HTML file with a Flask application:
+
+1. Save the HTML file in the templates directory of your Flask application.
+2. Implement a Flask route to handle the form submission and retrieve train information based on the submitted train number.
+3. Render the HTML template containing this form in the Flask route.
+
+## Example
+
+Here's an example Flask route that renders the train information form:
+
+```python
+from flask import Flask, render_template
+
+app = Flask(__name__)
+
+@app.route('/')
+def index():
+    return render_template('train_form.html')
+
+if __name__ == '__main__':
+    app.run(debug=True)
+
+
+
+
