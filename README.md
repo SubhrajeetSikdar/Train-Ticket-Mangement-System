@@ -1,27 +1,52 @@
-# Train Ticket Booking System
+Train Ticket Booking System
+This project implements a simple Train Ticket Booking System using Flask and a MySQL database.
 
-This is a simple web application built with Flask that allows users to fetch real-time train information from IRCTC (Indian Railway Catering and Tourism Corporation) by entering the train number.
+Features:
 
-## Features
+Book train tickets for available trains.
+Cancel existing bookings.
+View a list of available trains.
+View a list of current bookings.
+Fetch train information (name and schedule) from an external website (https://enquiry.indianrail.gov.in/).
+Requirements:
 
-- **Real-time Train Information:** Fetches real-time train information including train name, source, destination, and schedule from the IRCTC website.
-- **Ticket Booking:** Allows users to book tickets for available trains.
-- **Ticket Cancellation:** Provides functionality to cancel booked tickets.
-- **Database Integration:** Utilizes MySQL database to store train and booking information.
-- **Web Interface:** Provides a user-friendly web interface for interacting with the application.
+Python 3
+Flask
+mysql-connector-python
+requests
+beautifulsoup4
+Setup:
 
-## Installation
+Clone this repository.
+Install required libraries:
+Bash
+pip install Flask mysql-connector-python requests beautifulsoup4
+Use code with caution.
+content_copy
+Create a MySQL database named train_booking and configure the connection details in TrainTicketBookingSystem.py:
+Python
+self.conn = mysql.connector.connect(
+            host="localhost",
+            user="your_username",
+            password="your_password",
+            database="train_booking"
+        )
+Use code with caution.
+content_copy
+Run the application:
+Bash
+python app.py
+Use code with caution.
+content_copy
+Usage:
 
-1. Clone the repository:
+Access the application in your web browser at http://127.0.0.1:5000/ (default Flask development server).
+The homepage (/) provides an interface to view available trains and book tickets.
+You can fetch train information by entering the train number in the provided form.
+Notes:
 
-```bash
-git clone <https://github.com/SubhrajeetSikdar/Train-Ticket-Mangement-System>
+This is a basic implementation and does not handle real-time ticket booking or integration with payment gateways.
+The code fetches train information from an external website. The website structure or data format might change in the future, requiring code modifications.
+Contributing:
 
-
-
-
-Replace `<repository_url>` with the URL of your GitHub repository where this project is hosted.
-
-This README provides detailed instructions on installation, usage, configuration, and license information for your application. It should help users understand how to set up and utilize your Train Ticket Booking System effectively.
-
-
+Feel free to fork this repository and contribute improvements or new features.
