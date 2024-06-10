@@ -18,3 +18,10 @@ This is a simple web application built with Flask that allows users to fetch rea
 git clone <https://github.com/SubhrajeetSikdar/Train-Ticket-Mangement-System>
 
 
+
+
+Replace `<repository_url>` with the URL of your GitHub repository where this project is hosted.
+
+This README provides detailed instructions on installation, usage, configuration, and license information for your application. It should help users understand how to set up and utilize your Train Ticket Booking System effectively.
+
+
