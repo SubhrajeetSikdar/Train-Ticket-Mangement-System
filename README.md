@@ -15,4 +15,6 @@ This is a simple web application built with Flask that allows users to fetch rea
 1. Clone the repository:
 
 ```bash
-git clone <repository_url>
+git clone <https://github.com/SubhrajeetSikdar/Train-Ticket-Mangement-System>
+
+
