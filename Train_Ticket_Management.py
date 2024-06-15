@@ -107,7 +107,7 @@ def index():
 @app.route('/train_info', methods=['POST'])
 def train_info():
     train_number = request.form['train_number']
-    train_name, schedule = booking_system.fetch_train_info(train_number)
+    train_name,schedule = booking_system.fetch_train_info(train_number)
     return render_template('train_info.html', train_name=train_name, schedule=schedule)
 
 if __name__ == '__main__':
